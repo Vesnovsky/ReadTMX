@@ -18,7 +18,7 @@ std::string SingleTag::getValue(const std::string & valueName,const std::string&
 	return value;
 }
 
-singleTags & SingleTag::getSingeTags(const std::string & tagName)
+std::string SingleTag::getSingeTags(const std::string & tagName)
 {
 	std::string kayTag;
 	std::string line;
@@ -43,5 +43,5 @@ singleTags & SingleTag::getSingeTags(const std::string & tagName)
 
 
 
-	return;
+	return line;//////////////
 }

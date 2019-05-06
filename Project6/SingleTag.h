@@ -2,14 +2,15 @@
 #include <string>
 #include <fstream>
 #include<unordered_map>
+#include<vector>
 
-using singleTags = std::vector<SingleTag>;
+//using singleTags = std::vector<SingleTag>;
 
 class SingleTag
 {
 public:
 	SingleTag();
-	singleTags& getSingeTags(const std::string &tagName);
+	/*singleTags&*/std::string getSingeTags(const std::string &tagName);
 	std::string getValue(const std::string &valueName, const std::string&tagName);
 	
 private:
