@@ -9,11 +9,10 @@
 class SingleTag
 {
 public:
-	SingleTag();
-	/*singleTags&*/std::string getSingeTags(const std::string &tagName);
-	std::string getValue(const std::string &valueName, const std::string&tagName);
+	SingleTag(const std::string & tag);
+	std::string getValue(const std::string &valueName) const;
 	
 private:
-	std::unordered_multimap<std::string, std::string> singleTagsArray;
+	std::string tag;
 };
 
